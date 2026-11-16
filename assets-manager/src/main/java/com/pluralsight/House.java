@@ -3,11 +3,12 @@ package com.pluralsight;
 import java.math.BigDecimal;
 
 public class House extends Asset{
-    private String address;
+    String address;
     int condition;
     int squareFoot;
     int lotSize;
-    public House(String description, String dateAcquired, BigDecimal originalCost) {
+    public House(String description, String dateAcquired, BigDecimal originalCost
+            ,String address, int condition, int squareFoot, int lotSize) {
        super(description, dateAcquired, originalCost);
        this.address = address;
        this.condition = condition;

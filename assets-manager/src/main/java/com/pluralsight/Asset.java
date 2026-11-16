@@ -9,6 +9,7 @@ public class Asset {
     public Asset(String description, String dateAcquired, BigDecimal originalCost) {
         this.description = description;
         this.dateAcquired = dateAcquired;
+        this.originalCost = originalCost;
     }
     public void setDescription(String description) {
         this.description = description;
