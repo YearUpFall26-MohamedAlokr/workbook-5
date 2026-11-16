@@ -30,4 +30,13 @@ public class Asset {
         return originalCost;
     }
 
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Description: "+description+"\n");
+        sb.append("Date Acquired: "+dateAcquired+"\n");
+        sb.append("Original Cost: $"+originalCost+"\n");
+        sb.append("Current Value: $"+getValue());
+        return sb.toString();
+    }
 }

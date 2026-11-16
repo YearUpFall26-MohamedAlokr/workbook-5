@@ -21,13 +21,7 @@ public class Assets_Manger {
 
         for (Asset asset : assets) {
 
-            System.out.println("\nDescription: " + asset.getDescription());
-
-            System.out.println("Date Acquired: " + asset.getDateAcquired());
-
-            System.out.println("Original Cost: $" + asset.getValue());
-
-            System.out.println("Current Value: $" + asset.getValue());
+            System.out.println(asset);
 
             if (asset instanceof House) {
 
