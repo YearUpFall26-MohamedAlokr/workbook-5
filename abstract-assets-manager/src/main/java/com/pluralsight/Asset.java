@@ -2,7 +2,7 @@ package com.pluralsight;
 
 import java.math.BigDecimal;
 
-public class Asset {
+public abstract class Asset {
     private String description;
     private String dateAcquired;
     private BigDecimal originalCost;
@@ -26,9 +26,7 @@ public class Asset {
     public void setOriginalCost(BigDecimal originalCost) {
         this.originalCost = originalCost;
     }
-    public BigDecimal getValue() {
-        return originalCost;
-    }
+    public abstract BigDecimal getValue();
 
     @Override
     public String toString() {
